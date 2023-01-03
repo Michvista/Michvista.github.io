@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <script src="https://kit.fontawesome.com/7fa6d5fe14.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  div{
+    padding: 20px;
+    border: 1px solid red;
+  }
+</style>
+<body id="body">
+      <div id="div" >
+   <i class="fa-solid fa-bars" id="icon" onclick="clicked()" ></i>
+      </div>
+</body>
+<script>
+    var booleanss = false;
+    const icon = document.getElementById('icon')
+const clicked = () => {
+booleanss ? icon.className = 'fa-solid fa-bars' : icon.className = 'fa-solid fa-xmark';
+  alert('clicked')
+}
+
+  const div = document.getElementById('div');
+div.addEventListener('click', () => {
+  booleanss = !false
+} )
+</script>
+</html>
